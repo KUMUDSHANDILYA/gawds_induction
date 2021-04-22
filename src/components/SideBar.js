@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import PaymentForm from "./PaymentForm.js";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -7,6 +7,15 @@ import { Navbar, NavbarBrand, Nav, NavbarToggler, Collapse, NavItem, Jumbotron, 
 import "./SideBar.css";
 
 const SideBar = () => {
+
+  const [display1, handleDisplay1] = useState(true);
+  const [display2, handleDisplay2] = useState(false);
+
+  const function_ = (e) => {
+    handleDisplay1(!display1);
+    handleDisplay2(!display2);
+  }
+
   return (
     <div class = "sidebar">
         <Row><h2 className = "heading"><b>ORDER CYBERTRUCK</b></h2></Row>
@@ -48,13 +57,13 @@ const SideBar = () => {
         </Col>
         </Row>
 
-        <Row className = "a">
-        <Col xs = {12} className = "box_1">
+        {display1 && <Row className = "a">
+        <Col xs = {12} className = "box_1" onClick = {function_}>
         <b className = "e">Buy Now</b>
         </Col>
-        </Row>
+        </Row>}
 
-          <PaymentForm/>
+          {display2 && <PaymentForm />}
 
     </div>
   );
