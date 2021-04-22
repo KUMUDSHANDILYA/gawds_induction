@@ -1,5 +1,13 @@
 .home{
-  height: 97vh;
   width: 100%;
+  height: auto;
   background-color: black;
+  padding-right: 20px;
+  padding-bottom: 0;
+}
+
+.position-sticky{
+  position: -webkit-sticky; 
+  position: sticky;
+  top: 0;
 }

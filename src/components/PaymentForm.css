@@ -1,0 +1,70 @@
+.Label {
+  color: white;
+    font-family: -apple-system;
+}
+.Label_1{
+  color: rgb(128,128,128);
+    font-family: -apple-system;
+}
+
+input[type = text] {
+  width: 100%;
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+
+}
+
+input[type = email] {
+  width: 100%;
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+
+}
+
+Button[type = submit] {
+  width: 100%;
+  background-color: rgb(128,128,128);;
+  color: black;
+  border: 2px solid black;
+  font-family: -apple-system;
+  font-weight: bold;
+}
+
+select {
+  width: 100%;
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+}
+
+input[type = tel] {
+  width: 100%;
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+
+}
+
+.head_ {
+  color: white;
+    font-family: -apple-system;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.f_ {
+  margin-top: 10%;
+}
+
+.price{
+  float: right;
+  font-family: -apple-system;
+  color: rgb(128,128,128);
+  font-size: 18px;
+}
+
+.a{
+  margin-top: 10%;
+}

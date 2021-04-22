@@ -1,0 +1,64 @@
+.sidebar{
+  width: 95%;
+  margin-left: 5%;
+}
+
+.heading{
+  font-family: -apple-system;
+  color: white;
+  font-size: 28px;
+  margin-top: 10%;
+  margin-left: 5%;
+}
+
+.nav {
+  font-family: -apple-system;
+  margin-top: 10%;
+}
+
+.names{
+
+}
+
+.box{
+  width: 100%;
+  border-bottom: 2px solid white;
+}
+
+.box_{
+  width: 100%;
+}
+
+.price{
+  float: right;
+  font-family: -apple-system;
+  color: rgb(128,128,128);
+  font-size: 18px;
+}
+
+.a{
+  margin-top: 10%;
+}
+
+.b{
+  font-family: -apple-system;
+  color: white;
+  font-size: 20px;
+}
+
+.c{
+  font-family: -apple-system;
+  color: rgb(128,128,128);
+  text-align: justify;
+}
+
+.e{
+  font-family: -apple-system;
+  color: white;
+  font-size: 22px;
+}
+
+.box_1{
+  width: 100%;
+  border: 4px solid white;
+}

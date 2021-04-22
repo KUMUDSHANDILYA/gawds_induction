@@ -1,6 +1,6 @@
 import React from "react";
 import Poster from "../assets/Poster.png";
-import "./Image.css"; 
+import "./Image.css";
 
 const Image = () => {
   return(
