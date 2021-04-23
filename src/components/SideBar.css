@@ -22,6 +22,7 @@
 .box{
   width: 100%;
   border-bottom: 2px solid white;
+
   padding-bottom: 8px;
   transition: transform .2s;
 }
@@ -94,6 +95,7 @@
 .box_1{
   width: 90%;
   border: 4px solid white;
+  border-radius: 0 0 10px 0;
   text-align: center;
 }
 

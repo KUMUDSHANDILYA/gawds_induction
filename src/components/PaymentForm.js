@@ -106,7 +106,7 @@ const PaymentForm = () => {
 </FormGroup>
 
 
-<Button type="submit" value="submit" color="primary">PLACE ORDER</Button>
+<Button type="submit" value="submit" color="secondary" disabled>PLACE ORDER</Button>
 
 <FormGroup>
     <Label className = "Label_1">By clicking "Place Order" I agree to the Cybertruck Pre-Order Agreement, Supercharger Fair Use Policy, the Customer Privacy Agreement, and consent to be contacted at the number provided with more information or offers about Tesla products. I understand these calls or texts may use automated dialing or pre-recorded messages. I understand my consent to be contacted is not a condition of purchase.</Label>
