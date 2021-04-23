@@ -5,7 +5,13 @@
 }
 
 .x{
-  
+
   color: white;
   font-size: 26px;
+}
+
+@media screen and (max-width: 720px) {
+  .x{
+    font-size: 22px;
+  }
 }

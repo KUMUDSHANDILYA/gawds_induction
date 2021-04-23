@@ -25,15 +25,15 @@ const BottomBar = ({index}) => {
     <Container>
     <p>{index}</p>
     <Row>
-    <Col xs = {{span: 4}} md = {{span: 3, offset: 2}}>
+    <Col xs = {{span: 4}} lg = {{span: 3, offset: 2}}>
       <p className = "x"><b>{MI}+MI</b></p>
       <p className = "y">RANGE (EPA EST.)</p>
       </Col>
-      <Col xs = {{span: 4}} md = {{span: 3}}>
+      <Col xs = {{span: 4}} lg = {{span: 3}}>
         <p className = "x"><b>{LBS}+lbs</b></p>
         <p className = "y">TOWING CAPACITY</p>
         </Col>
-        <Col xs = {{span: 4}} md = {{span: 2}}>
+        <Col xs = {{span: 4}} lg  = {{span: 2}}>
           <p className = "x"><b> &#60; {S}s</b></p>
           <p className = "y">0-60 MPH</p>
           </Col>

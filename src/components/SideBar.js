@@ -53,7 +53,7 @@ const SideBar = ({index, setIndex}) => {
               </Col>
         </Navbar>
         </Row>
-
+        <Container>
         <Row className = "a">
         <Col xs = {12} className = "box">
         <b className = "self_d">FULL SELF DRIVING</b>
@@ -63,6 +63,7 @@ const SideBar = ({index, setIndex}) => {
         <p className = "c">Selecting Full Self-Driving today will secure your price as it increases in the future</p>
         </Col>
         </Row>
+        </Container>
 
         <Row className = "a">
         <Col xs = {12} className = "box_">
