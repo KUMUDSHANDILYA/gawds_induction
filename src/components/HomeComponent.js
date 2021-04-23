@@ -29,7 +29,7 @@ const Home = () => {
     </Row>
     </Container>
     </Col>
-    <Col sm = {{span: 3}} >
+    <Col sm = {{span: 4}} >
       <SideBar index = {index} setIndex = {setIndex}/>
     </Col>
     </Row>
