@@ -6,7 +6,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import "./Header.css";
 
-const Header = () => {
+const Header = ({setLang}) => {
 
 
 
@@ -16,13 +16,44 @@ const Header = () => {
     setIsModalOpen(!isModalOpen);
   }
 
+  const func_0 = (e) => {
+    setLang(0);
+    toggleModal();
+  }
+
+  const func_1 = (e) => {
+    setLang(1);
+    toggleModal();
+  }
+
+  const func_2 = (e) => {
+    setLang(2);
+    toggleModal();
+  }
+
+  const func_3 = (e) => {
+    setLang(3);
+    toggleModal();
+  }
+
+  const func_4 = (e) => {
+    setLang(4);
+    toggleModal();
+  }
+
+  const func_5 = (e) => {
+    setLang(5);
+    toggleModal();
+  }
+
+
 
   return (
     <>
     <Navbar className="navbar-dark bgblack fixed-top">
 
             <NavbarBrand className = "tesla" href="/"><img src = {TeslaLogo} alt = "TESLA"/></NavbarBrand>
-            <NavbarBrand className = "cont" onClick={toggleModal}><b>EU</b></NavbarBrand>
+            <NavbarBrand onClick={toggleModal}><b className = "cont">Country</b></NavbarBrand>
 
     </Navbar>
 
@@ -51,17 +82,17 @@ const Header = () => {
                      </Col>
                      <Col>
                      <FormGroup>
-                     <option onClick = {toggleModal}>United States</option>
+                     <option onClick = {func_0}>United States</option>
                      </FormGroup>
                      </Col>
                      <Col>
                      <FormGroup>
-                     <option onClick = {toggleModal}>Canada</option>
+                     <option onClick = {func_1}>Canada</option>
                      </FormGroup>
                      </Col>
                      <Col>
                      <FormGroup>
-                     <option onClick = {toggleModal}>Mexico</option>
+                     <option onClick = {func_2}>Mexico</option>
                      </FormGroup>
                      </Col>
 
@@ -72,42 +103,42 @@ const Header = () => {
                      </Col>
                      <Col>
                      <FormGroup>
-                     <option onClick = {toggleModal}>Belgie</option>
+                     <option onClick = {func_3}>Belgie</option>
                      </FormGroup>
                      </Col>
                      <Col>
                      <FormGroup>
-                     <option onClick = {toggleModal}>Belgique</option>
+                     <option onClick = {func_4}>Belgique</option>
                      </FormGroup>
                      </Col>
                      <Col>
                      <FormGroup>
-                     <option onClick = {toggleModal}>Cesco</option>
+                     <option onClick = {func_5}>Cesco</option>
                      </FormGroup>
                      </Col>
                      <Col>
                      <FormGroup>
-                     <option onClick = {toggleModal}>Danmark</option>
+                     <option onClick = {func_1}>Danmark</option>
                      </FormGroup>
                      </Col>
                      <Col>
                      <FormGroup>
-                     <option onClick = {toggleModal}>France</option>
+                     <option onClick = {func_0}>France</option>
                      </FormGroup>
                      </Col>
                      <Col>
                      <FormGroup>
-                     <option onClick = {toggleModal}>Ireland</option>
+                     <option onClick = {func_2}>Ireland</option>
                      </FormGroup>
                      </Col>
                      <Col>
                      <FormGroup>
-                     <option onClick = {toggleModal}>Italia</option>
+                     <option onClick = {func_3}>Italia</option>
                      </FormGroup>
                      </Col>
                      <Col>
                      <FormGroup>
-                     <option onClick = {toggleModal}>Netherland</option>
+                     <option onClick = {func_4}>Netherland</option>
                      </FormGroup>
                      </Col>
                      </Form>

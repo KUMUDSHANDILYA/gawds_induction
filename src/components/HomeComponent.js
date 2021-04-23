@@ -11,12 +11,14 @@ const Home = () => {
 
   const [index, setIndex] = useState(0);
 
+  const [lang, setLang] = useState(0);
+
   return (
     <div className = "home">
     <Container>
     <Row>
     <Col sm = {12}>
-    <Header/>
+    <Header setLang = {setLang}/>
     </Col>
     </Row>
     </Container>
@@ -32,7 +34,7 @@ const Home = () => {
     </Container>
     </Col>
     <Col sm = {{span: 4}} >
-      <SideBar index = {index} setIndex = {setIndex}/>
+      <SideBar index = {index} setIndex = {setIndex} lang = {lang}/>
     </Col>
     </Row>
     </div>

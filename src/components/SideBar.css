@@ -27,7 +27,7 @@
 }
 
 .h{
-  transition: 1s;
+  transition: .5s;
 }
 
 .h:hover{
@@ -73,7 +73,8 @@
 }
 
 .self_d:hover{
-  cursor: poiner;
+  cursor: pointer;
+  color: white;
 }
 
 .c{

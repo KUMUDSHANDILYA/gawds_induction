@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import PaymentForm from "./PaymentForm.js";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -6,7 +6,7 @@ import Col from 'react-bootstrap/Col';
 import { Navbar, NavbarBrand, Nav, NavbarToggler, Collapse, NavItem, Jumbotron, Button, Modal, ModalHeader, ModalBody , Form, FormGroup, Input, Label} from 'reactstrap';
 import "./SideBar.css";
 
-const SideBar = ({index, setIndex}) => {
+const SideBar = ({index, setIndex, lang}) => {
 
   const [classA, setClassA] = useState("lighter_name");
   const [classa, setClassa] = useState("lighter_price");
@@ -18,6 +18,17 @@ const SideBar = ({index, setIndex}) => {
   const [display1, handleDisplay1] = useState(true);
   const [display2, handleDisplay2] = useState(false);
   const [description, setDescription] = useState("Fully refundable. You will be able to complete your configuration as production nears in late 2021. Single Motor RWD production is expected to begin in late 2022.");
+
+  const languages = ["ORDER CYBERTRUCK", "PREORDER CYBERTRUCK", "APARTE SU CYBERTRUCK", "PRE-ORDER CYBERTRUCK",
+  "PRÉ-COMMANDER CYBERTRUCK", "PŘEDOBJEDNAT CYBERTRUCK"
+];
+
+  const [header, setHeader] = useState(languages[0]);
+
+  useEffect(() => {
+    setHeader(languages[lang]);
+  }, [lang])
+
 
   const function_ = (e) => {
     handleDisplay1(!display1);
@@ -68,7 +79,7 @@ const SideBar = ({index, setIndex}) => {
 
   return (
     <div class = "sidebar">
-        <Row><h2 className = "heading"><b>ORDER CYBERTRUCK</b></h2></Row>
+        <Row><h2 className = "heading" id = "content"><b>{header}</b></h2></Row>
         <Row>
         <Navbar className="navbar-dark bg-transparent nav">
 
