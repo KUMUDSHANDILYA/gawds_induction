@@ -16,19 +16,19 @@
   font-weight: bold;
 }
 
+.tesla{
+  left-margin: 10%;
+}
+
+.cont {
+  font-size: 10px;
+
+}
+
+
 option {
 
   font-size: 18px;
   font-weight: bold;
   color: rgb(128,128,128);
-}
-
-/*.m_head{
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-}*/
-
-.m_body {
-  z-index: -1;
 }

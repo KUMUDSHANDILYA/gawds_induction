@@ -100,7 +100,7 @@ const PaymentForm = () => {
 
 <FormGroup>
 
-<b className = "b">Due Today</b>
+<b className = "b_">DUE TODAY</b>
 <b className = "price">$100</b>
 
 </FormGroup>

@@ -100,10 +100,10 @@ const SideBar = ({index, setIndex}) => {
 
         <Row className = "a">
         <Col xs = {12} className = "box_">
-        <b className = "b">Due Today</b>
+        <b className = "b">DUE TODAY</b>
         <b className = "price">$100</b>
         </Col>
-        <Col xs = {12}>
+        <Col xs = {12} className = "_marg">
         <p className = "c">{description}</p>
         </Col>
         </Row>

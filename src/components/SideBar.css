@@ -32,6 +32,7 @@
 
 .h:hover{
   color: white;
+  cursor: pointer;
 }
 
 
@@ -55,19 +56,24 @@
   font-size: 16px;
 }
 
+
 .a{
   margin-top: 10%;
 }
 
 .b{
   color: white;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .self_d{
   color: rgb(128, 128, 128);
   font-size: 14px;
-  transition: 1s;
+
+}
+
+.self_d:hover{
+  cursor: poiner;
 }
 
 .c{
@@ -97,22 +103,27 @@
 
 .darker_name {
   color: rgb(128,128,128);
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .lighter_name{
   color: white;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .darker_price{
   color: rgb(128,128,128);
   float: right;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .lighter_price{
   float: right;
   color: white;
-  font-size: 18px;
+  font-size: 16px;
+
+}
+
+._marg{
+  margin-top: 10px;
 }

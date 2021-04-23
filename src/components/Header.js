@@ -29,10 +29,10 @@ render(){
   return (
     <>
     <Navbar className="navbar-dark bgblack fixed-top">
-    <div className="container">
-            <NavbarBrand href="/"><img src = {TeslaLogo} alt = "TESLA"/></NavbarBrand>
-            <NavbarBrand onClick={this.toggleModal}><b>EU</b></NavbarBrand>
-        </div>
+
+            <NavbarBrand className="tesla" href="/"><img src = {TeslaLogo} alt = "TESLA"/></NavbarBrand>
+            <NavbarBrand className="country" onClick={this.toggleModal}><b>EU</b></NavbarBrand>
+
     </Navbar>
 
 

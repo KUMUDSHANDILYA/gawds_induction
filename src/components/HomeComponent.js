@@ -13,11 +13,13 @@ const Home = () => {
 
   return (
     <div className = "home">
+    <Container>
     <Row>
     <Col sm = {12}>
     <Header/>
     </Col>
     </Row>
+    </Container>
     <Row className = "below_n">
     <Col sm = {8}>
     <Container className = "position-sticky">
