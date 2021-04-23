@@ -40,15 +40,15 @@ const SideBar = ({index, setIndex}) => {
         <Navbar className="navbar-dark bg-transparent nav">
 
               <Col xs = {12} className = "box" onClick = {func_1}>
-              <NavbarBrand><b className = "names">Single Motor RWD</b></NavbarBrand>
+              <NavbarBrand><b className = "names">SINGLE MOTOR RWD</b></NavbarBrand>
               <b className = "price">$39,000</b>
               </Col>
               <Col xs = {12} className = "box" onClick = {func_2}>
-              <NavbarBrand><b className = "names">Dual Motor AWD</b></NavbarBrand>
+              <NavbarBrand><b className = "names">DUAL MOTOR AWD</b></NavbarBrand>
               <b className = "price">$49,000</b>
               </Col>
               <Col xs = {12} className = "box" onClick = {func_3}>
-              <NavbarBrand><b className = "names">TRI Motor AWD</b></NavbarBrand>
+              <NavbarBrand><b className = "names">TRI MOTOR AWD</b></NavbarBrand>
               <b className = "price">$69,000</b>
               </Col>
         </Navbar>
@@ -56,8 +56,8 @@ const SideBar = ({index, setIndex}) => {
 
         <Row className = "a">
         <Col xs = {12} className = "box">
-        <span className = "b">Full Self Driving</span>
-        <b className = "price">$19,000</b>
+        <b className = "self_d">FULL SELF DRIVING</b>
+        <b className = "price_d">$19,000</b>
         </Col>
         <Col xs = {12}>
         <p className = "c">Selecting Full Self-Driving today will secure your price as it increases in the future</p>

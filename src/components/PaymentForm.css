@@ -1,10 +1,12 @@
 .Label {
   color: white;
-    font-family: -apple-system;
+
 }
 .Label_1{
   color: rgb(128,128,128);
-    font-family: -apple-system;
+ text-align: justify;
+ font-size: 14px;
+ font-weight: 500;
 }
 
 input[type = text] {
@@ -49,7 +51,7 @@ input[type = tel] {
 
 .head_ {
   color: white;
-    font-family: -apple-system;
+
     font-size: 20px;
     font-weight: bold;
 }
@@ -60,7 +62,7 @@ input[type = tel] {
 
 .price{
   float: right;
-  font-family: -apple-system;
+
   color: rgb(128,128,128);
   font-size: 18px;
 }

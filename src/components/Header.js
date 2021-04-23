@@ -1,6 +1,9 @@
 import React, {Component} from "react";
 import { Navbar, NavbarBrand, Nav, NavbarToggler, Collapse, NavItem, Jumbotron, Button, Modal, ModalHeader, ModalBody , Form, FormGroup, Input, Label} from 'reactstrap';
 import TeslaLogo from "../assets/teslaLogoSmall.svg";
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import "./Header.css";
 
 class Header extends Component{
@@ -34,20 +37,91 @@ render(){
 
 
     <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
-                 <ModalHeader toggle={this.toggleModal}><p className = "ModalHead">Select your Market</p></ModalHeader>
-                 <ModalBody>
 
+                 <ModalHeader toggle={this.toggleModal} className = "m_head">
+                 <Container>
+                 <Row>
+                 <Col>
+                 <p className = "modal_head">Select your Market</p>
+                 </Col>
+                 </Row>
+                 </Container>
+                </ModalHeader>
 
-                     <Form>
-                         <FormGroup>
-                             <h2 className = "h_2">North America</h2>
-                             <p>United States</p>
-                             <p>Canada</p>
-                             <p>Mexico</p>
-                         </FormGroup>
+                 <ModalBody >
+
+                 <Container>
+                 <Row>
+                     <Form >
+                     <Col>
+                     <FormGroup>
+                     <Label className = "l">North America</Label>
+                     </FormGroup>
+                     </Col>
+                     <Col>
+                     <FormGroup>
+                     <option>United States</option>
+                     </FormGroup>
+                     </Col>
+                     <Col>
+                     <FormGroup>
+                     <option>Canada</option>
+                     </FormGroup>
+                     </Col>
+                     <Col>
+                     <FormGroup>
+                     <option>Mexico</option>
+                     </FormGroup>
+                     </Col>
+
+                     <Col>
+                     <FormGroup>
+                     <Label className = "l">Europe</Label>
+                     </FormGroup>
+                     </Col>
+                     <Col>
+                     <FormGroup>
+                     <option>Belgie</option>
+                     </FormGroup>
+                     </Col>
+                     <Col>
+                     <FormGroup>
+                     <option>Belgique</option>
+                     </FormGroup>
+                     </Col>
+                     <Col>
+                     <FormGroup>
+                     <option>Cesco</option>
+                     </FormGroup>
+                     </Col>
+                     <Col>
+                     <FormGroup>
+                     <option>Danmark</option>
+                     </FormGroup>
+                     </Col>
+                     <Col>
+                     <FormGroup>
+                     <option>France</option>
+                     </FormGroup>
+                     </Col>
+                     <Col>
+                     <FormGroup>
+                     <option>Ireland</option>
+                     </FormGroup>
+                     </Col>
+                     <Col>
+                     <FormGroup>
+                     <option>Italia</option>
+                     </FormGroup>
+                     </Col>
+                     <Col>
+                     <FormGroup>
+                     <option>Netherland</option>
+                     </FormGroup>
+                     </Col>
                      </Form>
-
-
+                     </Row>
+                     </Container>
                  </ModalBody>
              </Modal>
 </>

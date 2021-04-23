@@ -2,3 +2,33 @@
   background: black;
   width: 100%;
 }
+
+.modal_head{
+  text-align: center;
+
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.l {
+
+  font-size: 24px;
+  font-weight: bold;
+}
+
+option {
+
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(128,128,128);
+}
+
+/*.m_head{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}*/
+
+.m_body {
+  z-index: -1;
+}
