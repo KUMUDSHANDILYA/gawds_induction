@@ -6,15 +6,32 @@ import Col from 'react-bootstrap/Col';
 import { Navbar, NavbarBrand, Nav, NavbarToggler, Collapse, NavItem, Jumbotron, Button, Modal, ModalHeader, ModalBody , Form, FormGroup, Input, Label} from 'reactstrap';
 import "./SideBar.css";
 
-const SideBar = () => {
+const SideBar = ({index, setIndex}) => {
 
   const [display1, handleDisplay1] = useState(true);
   const [display2, handleDisplay2] = useState(false);
+  const [description, setDescription] = useState("Fully refundable. You will be able to complete your configuration as production nears in late 2021. Single Motor RWD production is expected to begin in late 2022.");
 
   const function_ = (e) => {
     handleDisplay1(!display1);
     handleDisplay2(!display2);
   }
+
+  const func_1 = (e) => {
+    setIndex(0);
+    setDescription("Fully refundable. You will be able to complete your configuration as production nears in late 2021. Single Motor RWD production is expected to begin in late 2022.");
+  }
+
+  const func_2 = (e) => {
+    setIndex(1);
+    setDescription("Fully refundable. You will be able to complete your configuration as production nears in late 2021. Dual Motor AWD production is expected in late 2021.");
+  }
+
+  const func_3 = (e) => {
+    setIndex(2);
+    setDescription("Fully refundable. You will be able to complete your configuration as production nears in late 2021. Tri Motor AWD production is expected in late 2021.");
+  }
+
 
   return (
     <div class = "sidebar">
@@ -22,15 +39,15 @@ const SideBar = () => {
         <Row>
         <Navbar className="navbar-dark bg-transparent nav">
 
-              <Col xs = {12} className = "box">
+              <Col xs = {12} className = "box" onClick = {func_1}>
               <NavbarBrand><b className = "names">Single Motor RWD</b></NavbarBrand>
               <b className = "price">$39,000</b>
               </Col>
-              <Col xs = {12} className = "box">
+              <Col xs = {12} className = "box" onClick = {func_2}>
               <NavbarBrand><b className = "names">Dual Motor AWD</b></NavbarBrand>
               <b className = "price">$49,000</b>
               </Col>
-              <Col xs = {12} className = "box">
+              <Col xs = {12} className = "box" onClick = {func_3}>
               <NavbarBrand><b className = "names">TRI Motor AWD</b></NavbarBrand>
               <b className = "price">$69,000</b>
               </Col>
@@ -53,7 +70,7 @@ const SideBar = () => {
         <b className = "price">$100</b>
         </Col>
         <Col xs = {12}>
-        <p className = "c">Fully refundable. You will be able to complete your configuration as production nears in late 2021. Tri Motor AWD production is expected in late 2021.</p>
+        <p className = "c">{description}</p>
         </Col>
         </Row>
 
@@ -63,7 +80,7 @@ const SideBar = () => {
         </Col>
         </Row>}
 
-          {display2 && <PaymentForm />}
+          {display2 && <PaymentForm id = "payment"/>}
 
     </div>
   );

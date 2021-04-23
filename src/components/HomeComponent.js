@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -8,6 +8,9 @@ import BottomBar from "./BottomBar.js";
 import Image from "./Image.js";
 import "./Home.css";
 const Home = () => {
+
+  const [index, setIndex] = useState(0);
+
   return (
     <div className = "home">
     <Row>
@@ -22,12 +25,12 @@ const Home = () => {
     <Image/>
     </Row>
     <Row>
-      <BottomBar/>
+      <BottomBar index = {index}/>
     </Row>
     </Container>
     </Col>
     <Col sm = {{span: 3}} >
-      <SideBar/>
+      <SideBar index = {index} setIndex = {setIndex}/>
     </Col>
     </Row>
     </div>

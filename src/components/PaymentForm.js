@@ -54,7 +54,7 @@ const PaymentForm = () => {
      <FormGroup>
          <Label className = "Label">EXPIRATION MONTH</Label>
          <select class="form-select" aria-label="Default select example">
-          <option selected value="1">1</option>
+          <option value="1">1</option>
           <option value="2">2</option>
           <option value="3">3</option>
           <option value="3">4</option>
@@ -71,7 +71,7 @@ const PaymentForm = () => {
     <FormGroup>
         <Label className = "Label">EXPIRATION YEAR</Label>
         <select class="form-select" aria-label="Default select example">
-         <option selected value="2021">2021</option>
+         <option value="2021">2021</option>
          <option value="2022">2022</option>
          <option value="2023">2023</option>
          <option value="2024">2024</option>
