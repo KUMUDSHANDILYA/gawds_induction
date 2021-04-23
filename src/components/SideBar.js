@@ -73,16 +73,16 @@ const SideBar = ({index, setIndex}) => {
         <Navbar className="navbar-dark bg-transparent nav">
 
               <Col xs = {12} className = "box" onClick = {func_1}>
-              <NavbarBrand><b className = {classA}>SINGLE MOTOR RWD</b></NavbarBrand>
-              <b className = {classa}>$39,000</b>
+              <NavbarBrand><b className = {`${classA} h`}>SINGLE MOTOR RWD</b></NavbarBrand>
+              <b className = {`${classa} h`}>$39,000</b>
               </Col>
               <Col xs = {12} className = "box" onClick = {func_2}>
-              <NavbarBrand><b className = {classB}>DUAL MOTOR AWD</b></NavbarBrand>
-              <b className = {classb}>$49,000</b>
+              <NavbarBrand><b className ={`${classB} h`}>DUAL MOTOR AWD</b></NavbarBrand>
+              <b className = {`${classb} h`}>$49,000</b>
               </Col>
               <Col xs = {12} className = "box" onClick = {func_3}>
-              <NavbarBrand><b className = {classC}>TRI MOTOR AWD</b></NavbarBrand>
-              <b className = {classc}>$69,000</b>
+              <NavbarBrand><b className = {`${classC} h`}>TRI MOTOR AWD</b></NavbarBrand>
+              <b className = {`${classc} h`}>$69,000</b>
               </Col>
         </Navbar>
         </Row>

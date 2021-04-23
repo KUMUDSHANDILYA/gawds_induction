@@ -28,7 +28,7 @@ class Header extends Component{
 render(){
   return (
     <>
-    <Navbar className="navbar-dark bgblack">
+    <Navbar className="navbar-dark bgblack fixed-top">
     <div className="container">
             <NavbarBrand href="/"><img src = {TeslaLogo} alt = "TESLA"/></NavbarBrand>
             <NavbarBrand onClick={this.toggleModal}><b>EU</b></NavbarBrand>

@@ -18,13 +18,13 @@ const Home = () => {
     <Header/>
     </Col>
     </Row>
-    <Row>
+    <Row className = "below_n">
     <Col sm = {8}>
     <Container className = "position-sticky">
     <Row>
     <Image/>
     </Row>
-    <Row>
+    <Row className = "random">
       <BottomBar index = {index}/>
     </Row>
     </Container>

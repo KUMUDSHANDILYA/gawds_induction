@@ -5,9 +5,10 @@
 
 .heading{
   color: white;
-  font-size: 28px;
+  font-size: 24px;
   margin-top: 10%;
   margin-left: 5%;
+  letter-spacing: 1px;
 }
 
 .nav {
@@ -25,19 +26,22 @@
   transition: transform .2s;
 }
 
-.box:hover{
-  transform: scale(1.1);
-
+.h{
+  transition: 1s;
 }
+
+.h:hover{
+  color: white;
+}
+
+
 
 .box_{
   width: 100%;
 
 }
 
-.box_1:hover {
-    transform: scale(1.1);
-}
+
 
 .price{
   float: right;
@@ -63,6 +67,7 @@
 .self_d{
   color: rgb(128, 128, 128);
   font-size: 14px;
+  transition: 1s;
 }
 
 .c{
