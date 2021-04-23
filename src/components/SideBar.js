@@ -92,7 +92,7 @@ const SideBar = ({index, setIndex}) => {
         <b className = "self_d" onClick = {func_4}>{addPrice}</b>
         <b className = "price_d">$19,000</b>
         </Col>
-        <Col xs = {12}>
+        <Col xs = {12} margin-top = "5px">
         <p className = "c">Selecting Full Self-Driving today will secure your price as it increases in the future</p>
         </Col>
         </Row>
@@ -109,7 +109,7 @@ const SideBar = ({index, setIndex}) => {
         </Row>
 
         {display1 && <Row className = "a">
-        <Col xs = {12} className = "box_1" onClick = {function_}>
+        <Col xs = {{span: 10, offset: 1}} className = "box_1" onClick = {function_}>
         <b className = "e">Buy Now</b>
         </Col>
         </Row>}

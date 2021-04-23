@@ -1,4 +1,4 @@
-import React, {Component} from "react";
+import React, {useState, useEffect} from "react";
 import { Navbar, NavbarBrand, Nav, NavbarToggler, Collapse, NavItem, Jumbotron, Button, Modal, ModalHeader, ModalBody , Form, FormGroup, Input, Label} from 'reactstrap';
 import TeslaLogo from "../assets/teslaLogoSmall.svg";
 import Container from 'react-bootstrap/Container';
@@ -6,39 +6,30 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import "./Header.css";
 
-class Header extends Component{
+const Header = () => {
 
-  constructor(props) {
 
-         super(props);
-         this.state = {
-             isModalOpen: false
-         };
-         this.toggleModal = this.toggleModal.bind(this);
-     }
 
-     toggleModal() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
-        this.setState({
-            isModalOpen: !this.state.isModalOpen
-        });
+  const toggleModal = (e) => {
+    setIsModalOpen(!isModalOpen);
+  }
 
-    }
 
-render(){
   return (
     <>
     <Navbar className="navbar-dark bgblack fixed-top">
 
-            <NavbarBrand className="tesla" href="/"><img src = {TeslaLogo} alt = "TESLA"/></NavbarBrand>
-            <NavbarBrand className="country" onClick={this.toggleModal}><b>EU</b></NavbarBrand>
+            <NavbarBrand className = "tesla" href="/"><img src = {TeslaLogo} alt = "TESLA"/></NavbarBrand>
+            <NavbarBrand className = "cont" onClick={toggleModal}><b>EU</b></NavbarBrand>
 
     </Navbar>
 
 
-    <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
+    <Modal isOpen={isModalOpen} toggle={toggleModal}>
 
-                 <ModalHeader toggle={this.toggleModal} className = "m_head">
+                 <ModalHeader toggle={toggleModal} className = "m_head">
                  <Container>
                  <Row>
                  <Col>
@@ -60,17 +51,17 @@ render(){
                      </Col>
                      <Col>
                      <FormGroup>
-                     <option>United States</option>
+                     <option onClick = {toggleModal}>United States</option>
                      </FormGroup>
                      </Col>
                      <Col>
                      <FormGroup>
-                     <option>Canada</option>
+                     <option onClick = {toggleModal}>Canada</option>
                      </FormGroup>
                      </Col>
                      <Col>
                      <FormGroup>
-                     <option>Mexico</option>
+                     <option onClick = {toggleModal}>Mexico</option>
                      </FormGroup>
                      </Col>
 
@@ -81,42 +72,42 @@ render(){
                      </Col>
                      <Col>
                      <FormGroup>
-                     <option>Belgie</option>
+                     <option onClick = {toggleModal}>Belgie</option>
                      </FormGroup>
                      </Col>
                      <Col>
                      <FormGroup>
-                     <option>Belgique</option>
+                     <option onClick = {toggleModal}>Belgique</option>
                      </FormGroup>
                      </Col>
                      <Col>
                      <FormGroup>
-                     <option>Cesco</option>
+                     <option onClick = {toggleModal}>Cesco</option>
                      </FormGroup>
                      </Col>
                      <Col>
                      <FormGroup>
-                     <option>Danmark</option>
+                     <option onClick = {toggleModal}>Danmark</option>
                      </FormGroup>
                      </Col>
                      <Col>
                      <FormGroup>
-                     <option>France</option>
+                     <option onClick = {toggleModal}>France</option>
                      </FormGroup>
                      </Col>
                      <Col>
                      <FormGroup>
-                     <option>Ireland</option>
+                     <option onClick = {toggleModal}>Ireland</option>
                      </FormGroup>
                      </Col>
                      <Col>
                      <FormGroup>
-                     <option>Italia</option>
+                     <option onClick = {toggleModal}>Italia</option>
                      </FormGroup>
                      </Col>
                      <Col>
                      <FormGroup>
-                     <option>Netherland</option>
+                     <option onClick = {toggleModal}>Netherland</option>
                      </FormGroup>
                      </Col>
                      </Form>
@@ -128,6 +119,6 @@ render(){
 
   );
 }
-}
+
 
 export default Header;
