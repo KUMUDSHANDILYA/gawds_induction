@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/gawds_induction/static/css/main.f10e2268.chunk.css",
+    "main.js": "/gawds_induction/static/js/main.ca5ff99e.chunk.js",
+    "main.js.map": "/gawds_induction/static/js/main.ca5ff99e.chunk.js.map",
+    "runtime-main.js": "/gawds_induction/static/js/runtime-main.5e20b788.js",
+    "runtime-main.js.map": "/gawds_induction/static/js/runtime-main.5e20b788.js.map",
+    "static/css/2.658248ec.chunk.css": "/gawds_induction/static/css/2.658248ec.chunk.css",
+    "static/js/2.6130ede9.chunk.js": "/gawds_induction/static/js/2.6130ede9.chunk.js",
+    "static/js/2.6130ede9.chunk.js.map": "/gawds_induction/static/js/2.6130ede9.chunk.js.map",
+    "static/js/3.0c936c7c.chunk.js": "/gawds_induction/static/js/3.0c936c7c.chunk.js",
+    "static/js/3.0c936c7c.chunk.js.map": "/gawds_induction/static/js/3.0c936c7c.chunk.js.map",
+    "index.html": "/gawds_induction/index.html",
+    "static/css/2.658248ec.chunk.css.map": "/gawds_induction/static/css/2.658248ec.chunk.css.map",
+    "static/css/main.f10e2268.chunk.css.map": "/gawds_induction/static/css/main.f10e2268.chunk.css.map",
+    "static/js/2.6130ede9.chunk.js.LICENSE.txt": "/gawds_induction/static/js/2.6130ede9.chunk.js.LICENSE.txt",
+    "static/media/Poster.a4e438d4.png": "/gawds_induction/static/media/Poster.a4e438d4.png",
+    "static/media/index.css": "/gawds_induction/static/media/iCiel-Medium.b23bb62d.ttf",
+    "static/media/teslaLogoSmall.4cadbae9.svg": "/gawds_induction/static/media/teslaLogoSmall.4cadbae9.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5e20b788.js",
+    "static/css/2.658248ec.chunk.css",
+    "static/js/2.6130ede9.chunk.js",
+    "static/css/main.f10e2268.chunk.css",
+    "static/js/main.ca5ff99e.chunk.js"
+  ]
+}
